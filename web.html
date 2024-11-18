@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuitMedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header"> 
+        <div class="logo"><a href=""><img src="media/logo.png" alt=""></a></div>
+    <nav class="navi"> 
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Ideas</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<section class="image1">
+    <img src="media/image1.png" id="img1">
+    <h3 id="text1" class="text">Ideas</h3>
+    <h5 id="text2" class="text">where all our great things begin</h5>
+</section>
+
+    <section class="controls">
+        <select id="sortBy" class="sort-select">
+            <option value="-published_at">Sort by Latest</option>
+            <option value="published_at">Sort by Oldest</option>
+        </select>
+
+        <select id="itemsPerPage" class="items-select">
+            <option value="10">10 items per page</option>
+            <option value="20">20 items per page</option>
+            <option value="50">50 items per page</option>
+        </select>
+    </section>
+
+    <section class="posts-container">
+        <div class="cards">
+        </div>
+    </section>
+
+    <div class="pagination">
+        <ul>
+            <li class="item-page previous-page"><a id="previous" class="page-link"><<</a></li>
+            <li class="item-page current-page"><a href="#" class="page-link">1</a></li>
+            <li class="item-page current-page"><a href="#" class="page-link">2</a></li>
+            <li class="item-page current-page"><a href="#" class="page-link">3</a></li>
+            <li class="item-page next-page"><a id="next" class="page-link">>></a></li>
+        </ul>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

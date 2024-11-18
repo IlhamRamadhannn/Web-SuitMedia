@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(255, 105, 35);
+}
+
+.logo img{
+    filter:  saturate(0) brightness(2);
+    
+}
+
+.navi a {
+    text-decoration: none;
+    color: white;
+    font-weight: 350;
+    padding: 3px 2px;
+    margin: 0 2px;
+    position: relative;
+}
+
+.navi a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.navi a:hover::after, a:active::after {
+    width: 100%;
+}
+
+.image1 {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-bottom: 35%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    overflow: hidden;
+    
+}
+
+#text1 {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    bottom: 42%;
+}
+
+#text2 {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    bottom: 36%;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+#img1{
+    filter: opacity(80%);
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card{
+    position: relative;
+    background: white;
+    max-width: 325px;
+    height: auto;
+    margin: 25px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.img-card{
+    max-height: 200px;
+}
+
+.img-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.info-card{
+    position: relative;
+    color: black;
+    padding: 10px 20px 20px;
+}
+
+.info-card h3{
+    font-size: 1.8 cm;
+    font-weight:350px;
+    margin-bottom: 5px;
+}
+
+.info-card p{
+   font-size: 1rem;
+   margin-bottom: 5px;
+}
+
+.pagination{
+    text-align:center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.pagination a:focus, .pagination a:active .pagination a:hover{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 6px;
+    background-color: rgb(255, 105, 35); 
+    color: white; 
+}
+
